@@ -25,9 +25,13 @@ namespace WriteOnly
         private string _Path;
         private Timer _TopMostTimer;
 
+        public string Password;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            
         }
 
         protected override void OnInitialized(EventArgs e)

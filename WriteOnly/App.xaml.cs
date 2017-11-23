@@ -13,5 +13,14 @@ namespace WriteOnly
     /// </summary>
     public partial class App : Application
     {
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            if (e.Args.Count() == 0)
+                base.OnStartup(e);
+
+            //if (e.Args.Count() == 2 && e.Args[0] == "-p")
+            //    MainWindow.Password = e.Args[1];
+        }
     }
 }
